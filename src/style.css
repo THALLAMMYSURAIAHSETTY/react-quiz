@@ -1,0 +1,206 @@
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Pagecolor
+{
+  color: rgb(63, 217, 217);
+  text-shadow: 0px 0px 2px black;
+}
+.Pagecolor1
+{
+  color: rgb(0, 49, 118);
+  text-shadow: 0px 0px 2px rgb(63, 217, 217);
+}
+
+
+button,input,label
+{
+  cursor: pointer;
+}
+#Qpartandmap
+{
+  display: flex;
+}
+#Qpartandmap #map
+{
+  box-shadow: 0px 0px 10px rgb(56, 56, 56);
+  border-radius: 0.5rem;
+  height: 32rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+#Qpartandmap #Qpart
+{
+  box-shadow: 0px 0px 10px rgb(56, 56, 56);
+  border-radius: 0.5rem;
+  height: 32rem;
+  margin-right: 2rem;
+}
+#map
+{
+  width: 25vw;
+}
+#buttonsContainer
+{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 10px;
+}
+#buttonsContainer button {
+  margin:1rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background-color:rgb(129, 224, 192);
+  border: 2px solid rgb(52, 204, 153);
+  border-radius: 5px;
+  font-size:medium;
+  font-weight: bolder;
+  box-shadow: 0px 0px 3px rgb(5, 255, 205);
+}
+#ColorInstruction
+{
+  display: flex;
+  justify-content: space-around;
+}
+#ColorInstruction div div
+{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+#ColorInstruction div span
+{
+  margin-left: -1rem;
+}
+
+#Answered
+{
+  background-color: #00ff00;
+  border: 2px solid rgb(52, 204, 153);
+}
+#NotVisited
+{
+  background-color:rgb(135, 171, 159);
+  border: 2px solid rgb(80, 129, 112);
+}
+#Visited
+{
+  background-color:rgb(129, 224, 192);
+  border: 2px solid rgb(52, 204, 153);
+}
+
+
+#buttonsContainer button:disabled 
+{
+  background-color:rgb(135, 171, 159);
+  border: 2px solid rgb(80, 129, 112);
+  color: rgb(100, 100, 100);
+  font-weight:lighter;
+  box-shadow:none;
+  cursor: not-allowed;
+}
+#Qpart
+{
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Qpart p
+{
+  margin: 1rem;
+  width: 60vw;
+  font-size: xx-large;
+}
+#Qpart button, #leftsideSubmit
+{
+  margin: 2rem;
+  background-color: rgb(46, 168, 255);
+  border: 1px solid rgb(84, 84, 255);
+  border-radius: 5px;
+  width: 5rem;
+  height: 2rem;
+}
+#discur
+{
+  cursor: not-allowed;
+}
+#PreNextbuttonscontainer
+{
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+.optionscontainer input
+{
+  margin: 1rem;
+  font-size: x-large;
+
+}
+.true{
+  color: red;
+}
+#buttonscontainer
+{
+  display: flex;
+  justify-content: space-around;
+}
+#Interface_Top
+{
+  display: flex;
+  justify-content:space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+/* .YesActive
+{
+  border: 3px solid rgb(0, 214, 135);
+} */
+label {
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: 50vw;
+  box-shadow: 0px 0px 5px rgb(67, 202, 255);
+  border-radius: 0.5rem;
+}
+label span {
+  display: inline-block;
+  width: 50vw;
+  border-radius: 0.5rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+label span:before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+label input[type="radio"]:checked + span:before {
+  
+  background-color: rgb(97, 210, 255);
+  border-color:rgb(39, 194, 255);
+  content: "✔";
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+}
+
+label input[type="radio"]:checked +span {
+
+  background-color: rgb(97, 210, 255);
+  border-color: rgb(0, 43, 163);
+}
+
